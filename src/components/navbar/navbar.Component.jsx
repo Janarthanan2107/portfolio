@@ -3,10 +3,10 @@ const Navbar = () => {
     <div className="navbar fixed top-0 left-0 w-full shadow-md bg-white z-10">
       <div className="flex justify-between items-center m-5">
         <div className="logo font-poppins text-[1.5rem] tracking-wide font-bold text-gray-600">
-          Janarthanan.
+        <i class="fa-solid fa-code text-blue-500"></i> Janarthanan.
         </div>
         <div className="menu">
-          <ul className="flex gap-7">
+          <ul className="flex gap-7 text-[1.1150rem]">
             <li className="cursor-pointer hover:text-primary">Home</li>
             <li className="cursor-pointer hover:text-primary">Skills</li>
             <li className="cursor-pointer hover:text-primary">Portfolio</li>
