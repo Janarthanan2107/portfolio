@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="navbar fixed top-0 left-0 w-full shadow-md">
+    <div className="navbar fixed top-0 left-0 w-full shadow-md bg-white z-10">
       <div className="flex justify-between items-center m-5">
         <div className="logo font-poppins text-[1.5rem] tracking-wide font-bold text-gray-600">
           Janarthanan.
