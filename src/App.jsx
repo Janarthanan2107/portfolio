@@ -1,7 +1,7 @@
-import { Navbar, Hero, Footer, Skills } from "./components";
+import { Navbar, Hero, Skills, Projects } from "./components";
 
 // styles
-import "./App.css"
+import "./App.css";
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Skills />
+      <Projects />
     </>
   );
 };
