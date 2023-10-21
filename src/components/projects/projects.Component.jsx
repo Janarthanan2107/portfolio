@@ -21,7 +21,7 @@ const Projects = () => {
         </div>
         <div className="mt-5 flex justify-center items-center">
           <div className="skill-container grid grid-cols-3 items-center justify-center gap-8">
-            {/* {projectsData.map((item) => {
+            {projectsData.map((item) => {
               const { id, img, title, desc, link } = item;
               return (
                 <div
@@ -44,7 +44,7 @@ const Projects = () => {
                   </div>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </div>
       </div>
