@@ -4,11 +4,14 @@ const Hero = () => {
       <div className="h-screen p-20 bg-bgShade grid grid-cols-2 justify-center items-center gap-10">
         <div className="hero-content font-semibold flex flex-col">
           <p className="text-[1.2rem]">Hey, I'm Janarthanan</p>
-          <p className="text-[4rem] font-bold">Full Stack Developer</p>
+          <p className="text-[4rem] font-bold">
+            Full Stack <span className="text-primary">Developer</span>
+          </p>
           <p className="text-[1.2rem] text-gray-500">
-            Passionate about creating seamless, responsive web applications and
-            dynamic websites to showcase a diverse portfolio of digital
-            projects.
+            With a love for crafting responsive and user-centric web
+            applications, I'm dedicated to building digital solutions that stand
+            out and reflect my diverse portfolio of innovative projects,
+            delivering results that matter.
           </p>
           <div className="contact-container mt-5">
             <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
