@@ -8,10 +8,10 @@ const Footer = () => {
         </div>
         <div className="menu">
           <ul className="flex gap-7 text-[1.2rem]">
-            <li className="cursor-pointer hover:text-primary hover:border-b hover:border-b-primary">Home</li>
-            <li className="cursor-pointer hover:text-primary hover:border-b hover:border-b-primary">Skills</li>
-            <li className="cursor-pointer hover:text-primary hover:border-b hover:border-b-primary">Portfolio</li>
-            <li className="cursor-pointer hover:text-primary hover:border-b hover:border-b-primary">Contact</li>
+            <li className="cursor-pointer hover:text-primary border-b hover:border-b-primary">Home</li>
+            <li className="cursor-pointer hover:text-primary border-b hover:border-b-primary">Skills</li>
+            <li className="cursor-pointer hover:text-primary border-b hover:border-b-primary">Portfolio</li>
+            <li className="cursor-pointer hover:text-primary border-b hover:border-b-primary">Contact</li>
           </ul>
         </div>
         <div className="social-links">
