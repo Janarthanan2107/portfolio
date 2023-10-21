@@ -1,4 +1,4 @@
-import { Navbar, Hero, Skills, Projects } from "./components";
+import { Navbar, Hero, Skills, Projects, Form } from "./components";
 
 // styles
 import "./App.css";
@@ -10,6 +10,7 @@ const App = () => {
       <Hero />
       <Skills />
       <Projects />
+      <Form />
     </>
   );
 };

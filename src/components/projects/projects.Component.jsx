@@ -3,8 +3,8 @@ import "./project.css";
 const Projects = () => {
   return (
     <div className="projects">
-      <div className="h-auto bg-bgShade p-24">
-        <div className="heading mt-5 flex justify-between">
+      <div className="h-auto bg-bgShade pt-24 px-24 pb-20">
+        <div className="heading flex justify-between">
           <div>
             <p className="text-[1.2rem] font-bold text-headingColor">
               Recent Projects
