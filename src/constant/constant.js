@@ -25,5 +25,29 @@ const skillsData = [
     },
 ];
 
+const projectsData = [
+    {
+        id: 1,
+        img: "/assets/project-thumbnail/project-placeholder-image.png",
+        title: "Crud Application",
+        desc: "Successfully designed and implemented a robust CRUD (Create, Read, Update, Delete) application, streamlining data management with a user-friendly interface. Demonstrated proficiency in database integration and application development.",
+        link: "https://github.com/Janarthanan2107/BasicCurd-React"
+    },
+    {
+        id: 2,
+        img: "/assets/project-thumbnail/project-placeholder-image.png",
+        title: "Product Data",
+        desc: "Created a dynamic product card data fetching system, efficiently presenting real-time product information with an appealing design. Demonstrated expertise in API integration and responsive web design.",
+        link: "https://github.com/Janarthanan2107/API-Products-React"
+    },
+    {
+        id: 3,
+        img: "/assets/project-thumbnail/project-placeholder-image.png",
+        title: "React Carousel",
+        desc: "Developed a captivating React Carousel project, seamlessly fetching and displaying dynamic content in an engaging and interactive manner. Demonstrated mastery in front-end development and data presentation.",
+        link: "https://github.com/Janarthanan2107/Carousel-React"
+    }
+]
 
-export { skillsData }
+
+export { skillsData, projectsData }
