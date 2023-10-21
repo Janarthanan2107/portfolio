@@ -11,7 +11,7 @@ const Skills = () => {
         </div>
         <div className="h-[55vh] flex justify-center items-center">
           <div className="skill-container grid grid-cols-4 items-center justify-center gap-8">
-            {/* {skillsData.map((item) => {
+            {skillsData.map((item) => {
               const { id, img, skill, desc } = item;
               return (
                 <div
@@ -23,7 +23,7 @@ const Skills = () => {
                   <p className="text-gray-600 mt-2">{desc}</p>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </div>
       </div>
