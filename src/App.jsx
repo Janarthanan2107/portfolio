@@ -1,4 +1,4 @@
-import { Navbar, Hero, Skills, Projects, Form } from "./components";
+import { Navbar, Hero, Skills, Projects, Form, Footer } from "./components";
 
 // styles
 import "./App.css";
@@ -11,6 +11,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Form />
+      <Footer />
     </>
   );
 };
