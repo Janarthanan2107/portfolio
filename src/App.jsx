@@ -5,23 +5,38 @@ import { useDarkTheme } from "./context/theme.Context";
 
 // styles
 import "./App.css";
+import { useState } from "react";
 
 const App = () => {
   // use our theme context here!
-  const { toggleDarkTheme } = useDarkTheme();
+  const { toggleDarkTheme, theme } = useDarkTheme();
+
+  const [activeSection, setActiveSection] = useState('home'); // Default to 'home'
+
+  function smoothScrollTo(targetId) {
+    const targetElement = document.getElementById(targetId);
+    setActiveSection(targetId)
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   return (
     <>
-      <div className="fixed top-28 -right-4 bg-primary rounded-3xl w-[70px] hover:shadow-md">
+      <div className="fixed top-28 -right-4 bg-primary rounded-3xl w-[70px] hover:shadow-md z-10">
         <button
-          className="text-[2rem] bg-primary text-white p-6 rounded-[50%] w-9 h-9 flex items-center justify-center"
+          className="text-[1.5rem] bg-primary text-white p-6 rounded-[50%] w-9 h-9 flex items-center justify-center"
           onClick={toggleDarkTheme}
         >
-          <i className="fa-regular fa-moon"></i>
+          {!theme ? (
+            <i className="fa-regular fa-moon"></i>
+          ) : (
+            <i class="fa-solid fa-sun"></i>
+          )}
         </button>
       </div>
-      <Navbar />
-      <Hero />
+      <Navbar activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
+      <Hero activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
       <Skills />
       <Projects />
       <Form />
