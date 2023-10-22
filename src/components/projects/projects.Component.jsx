@@ -11,7 +11,7 @@ const Projects = () => {
   // use our theme context here!
   const { theme } = useDarkTheme();
   return (
-    <div className="projects">
+    <div className="projects" id="portfolio">
       <div
         className={`h-auto pt-24 px-24 pb-20 ${
           theme ? "bg-zinc-900" : "bg-bgShade"
@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className="project-img">
                       <img src={img} alt="project-img" className="rounded-md" />
                       <div className="details">
-                        <a href={live}>
+                        <a href={live} target="_blank">
                           <button className="py-2 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
                             Project live
                             <i className="fa-solid fa-arrow-right -rotate-45 mx-1"></i>
