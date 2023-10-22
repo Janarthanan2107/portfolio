@@ -6,9 +6,10 @@ const Form = () => {
   const { theme } = useDarkTheme();
   return (
     <div
-      className={`form py-16 bg-white flex flex-col justify-center items-center ${
+      className={`form py-[4rem] bg-white flex flex-col justify-center items-center ${
         theme ? "bg-zinc-900" : "bg-bgShade"
       } transition duration-500 ease-out hover:ease-in`}
+      id="form"
     >
       <div className="heading py-8">
         <p
