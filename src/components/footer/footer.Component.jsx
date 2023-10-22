@@ -3,8 +3,8 @@ const Footer = () => {
     <div className="footer h-[50vh] bg-bgShade py-24 px-16">
       <div className="flex justify-between items-center border-b border-b-gray-500 pb-[3rem]">
         <div className="text-[2.5rem] text-blue-500">
-          <i class="fa-solid fa-code"></i>
-          <i class="fa-brands fa-dev"></i>
+          <i className="fa-solid fa-code"></i>
+          <i className="fa-brands fa-dev"></i>
         </div>
         <div className="menu">
           <ul className="flex gap-7 text-[1.2rem]">
@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="social-links">
           <ul className="flex gap-7 text-[1.5rem]">
             <li className="cursor-pointer hover:text-primary">
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </li>
             <li className="cursor-pointer hover:text-primary">
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </li>
             <li className="cursor-pointer hover:text-primary">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </li>
           </ul>
         </div>
