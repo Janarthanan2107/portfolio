@@ -20,7 +20,7 @@ button{
 
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   border-radius: 25px;
 }
 
@@ -29,10 +29,10 @@ button{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: #5e3bee;
   border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bbb;
+  background: #482db6;
 }
