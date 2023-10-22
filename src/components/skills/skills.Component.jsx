@@ -3,6 +3,9 @@ import { useDarkTheme } from "../../context/theme.Context";
 // data
 import { skillsData } from "../../constant/constant";
 
+// style
+import "./skills.css"
+
 const Skills = () => {
   // use our theme context here!
   const { theme } = useDarkTheme();
@@ -14,7 +17,7 @@ const Skills = () => {
         } transition duration-500 ease-out hover:ease-in`}
       >
         {theme && (
-          <span className="absolute -top-24 right-10 flex justify-end">
+          <span className="absolute -top-24 right-10 flex justify-end animated-bounce">
             <img
               src="assets/decor/software-development.png"
               alt="decor"

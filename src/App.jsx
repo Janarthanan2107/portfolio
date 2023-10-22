@@ -31,7 +31,7 @@ const App = () => {
           {!theme ? (
             <i className="fa-regular fa-moon"></i>
           ) : (
-            <i class="fa-solid fa-sun"></i>
+            <i className="fa-solid fa-sun"></i>
           )}
         </button>
       </div>
