@@ -14,7 +14,7 @@ const Projects = () => {
             </p>
           </div>
           <div>
-            <a href="https://github.com/Janarthanan2107">
+            <a href="https://github.com/Janarthanan2107" target="_blank">
               <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
                 <i class="fa-brands fa-github mr-2"></i>Visit My Github
               </button>
