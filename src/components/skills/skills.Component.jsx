@@ -7,12 +7,21 @@ const Skills = () => {
   // use our theme context here!
   const { theme } = useDarkTheme();
   return (
-    <div className="skills">
+    <div className="skills relative" id="skills">
       <div
-        className={`h-screen  p-24 ${
+        className={`h-screen  p-20 ${
           theme ? "bg-zinc-900" : "bg-white"
         } transition duration-500 ease-out hover:ease-in`}
       >
+        {theme && (
+          <span className="absolute -top-24 right-10 flex justify-end">
+            <img
+              src="assets/decor/software-development.png"
+              alt="decor"
+              className="h-[150px]"
+            />
+          </span>
+        )}
         <div className="heading mt-5">
           <p
             className={`text-[1.2rem] font-bold ${
@@ -21,9 +30,11 @@ const Skills = () => {
           >
             My Skills
           </p>
-          <p className={`text-[4rem] font-bold ${
+          <p
+            className={`text-[4rem] font-bold ${
               theme ? "text-white" : "text-headingColor"
-            } `}>
+            } `}
+          >
             My Expertise
           </p>
         </div>
