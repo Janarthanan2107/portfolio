@@ -1,5 +1,6 @@
 import { projectsData } from "../../constant/constant";
 import "./project.css";
+
 const Projects = () => {
   return (
     <div className="projects">
@@ -16,7 +17,7 @@ const Projects = () => {
           <div>
             <a href="https://github.com/Janarthanan2107" target="_blank">
               <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
-                <i class="fa-brands fa-github mr-2"></i>Visit My Github
+                <i className="fa-brands fa-github mr-2"></i>Visit My Github
               </button>
             </a>
           </div>
@@ -30,14 +31,14 @@ const Projects = () => {
                   className="card bg-white rounded-md hover:shadow-lg"
                   key={id}
                 >
-                  <div class="project-img-container">
-                    <div class="project-img">
+                  <div className="project-img-container">
+                    <div className="project-img">
                       <img src={img} alt="project-img" className="rounded-md" />
-                      <div class="details">
+                      <div className="details">
                         <a href={live}>
                           <button className="py-2 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
                             Project live
-                            <i class="fa-solid fa-arrow-right -rotate-45 mx-1"></i>
+                            <i className="fa-solid fa-arrow-right -rotate-45 mx-1"></i>
                           </button>
                         </a>
                       </div>
@@ -52,7 +53,7 @@ const Projects = () => {
                         className="text-[0.9rem] font-semibold pb-2 underline underline-offset-8 text-gray-600 hover:text-primary"
                       >
                         View in Github
-                        <i class="fa-solid fa-arrow-right -rotate-45 mx-1"></i>
+                        <i className="fa-solid fa-arrow-right -rotate-45 mx-1"></i>
                       </a>
                     </span>
                   </div>
