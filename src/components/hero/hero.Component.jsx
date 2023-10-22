@@ -1,11 +1,11 @@
 // import context
 import { useDarkTheme } from "../../context/theme.Context";
 
-const Hero = () => {
+const Hero = ({ smoothScrollTo }) => {
   // use our theme context here!
   const { theme } = useDarkTheme();
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div
         className={`h-screen p-20 ${
           theme ? "bg-zinc-900" : "bg-bgShade"
@@ -20,7 +20,8 @@ const Hero = () => {
               theme ? "text-white" : "text-black"
             }`}
           >
-            Full Stack <span className="text-primary">Developer</span>
+            Full Stack{" "}
+            <span className="text-primary animate-pulse">Developer</span>
           </p>
           <p className="text-[1.2rem] text-gray-500">
             With a love for crafting responsive and user-centric web
@@ -29,9 +30,12 @@ const Hero = () => {
             delivering results that matter.
           </p>
           <div className="contact-container mt-5">
-            <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
-              Get in touch
-            </button>
+              <button
+                className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in"
+                onClick={() => smoothScrollTo("form")}
+              >
+                Get in touch
+              </button>
           </div>
         </div>
         <div className="hero-img flex justify-center">
