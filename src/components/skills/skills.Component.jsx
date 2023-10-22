@@ -1,13 +1,31 @@
+// import context
+import { useDarkTheme } from "../../context/theme.Context";
 // data
 import { skillsData } from "../../constant/constant";
 
 const Skills = () => {
+  // use our theme context here!
+  const { theme } = useDarkTheme();
   return (
     <div className="skills">
-      <div className="h-screen bg-white p-24">
+      <div
+        className={`h-screen  p-24 ${
+          theme ? "bg-zinc-900" : "bg-white"
+        } transition duration-500 ease-out hover:ease-in`}
+      >
         <div className="heading mt-5">
-          <p className="text-[1.2rem] font-bold text-headingColor">My Skills</p>
-          <p className="text-[4rem] font-bold text-headingColor">My Expertise</p>
+          <p
+            className={`text-[1.2rem] font-bold ${
+              theme ? "text-white" : "text-headingColor"
+            } `}
+          >
+            My Skills
+          </p>
+          <p className={`text-[4rem] font-bold ${
+              theme ? "text-white" : "text-headingColor"
+            } `}>
+            My Expertise
+          </p>
         </div>
         <div className="h-[55vh] flex justify-center items-center">
           <div className="skill-container grid grid-cols-4 items-center justify-center gap-8">
