@@ -1,16 +1,34 @@
+// import context
+import { useDarkTheme } from "../../context/theme.Context";
+
+// data's
 import { projectsData } from "../../constant/constant";
+
+// styles
 import "./project.css";
 
 const Projects = () => {
+  // use our theme context here!
+  const { theme } = useDarkTheme();
   return (
     <div className="projects">
-      <div className="h-auto bg-bgShade pt-24 px-24 pb-20">
+      <div
+        className={`h-auto pt-24 px-24 pb-20 ${
+          theme ? "bg-zinc-900" : "bg-bgShade"
+        } transition duration-500 ease-out hover:ease-in`}
+      >
         <div className="heading flex justify-between">
           <div>
-            <p className="text-[1.2rem] font-bold text-headingColor">
+          <p
+            className={`text-[1.2rem] font-bold ${
+              theme ? "text-white" : "text-headingColor"
+            } `}
+          >
               Recent Projects
             </p>
-            <p className="text-[3rem] mt-2 font-bold text-headingColor">
+            <p className={`text-[4rem] font-bold ${
+              theme ? "text-white" : "text-headingColor"
+            } `}>
               My Portfolio
             </p>
           </div>
