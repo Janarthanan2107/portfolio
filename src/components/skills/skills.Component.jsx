@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div className="skills relative" id="skills">
       <div
-        className={`h-screen  p-20 ${
+        className={`p-20 ${
           theme ? "bg-zinc-900" : "bg-white"
         } transition duration-500 ease-out hover:ease-in`}
       >
