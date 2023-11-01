@@ -26,6 +26,7 @@ const skillsData = [
     },
 ];
 
+// project datas
 const projectsData = [
     {
         id: 1,
