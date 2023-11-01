@@ -36,6 +36,7 @@ const App = () => {
           )}
         </button>
       </div>
+      {/* listing childrens */}
       <Navbar activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
       <Hero activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
       <Skills />
