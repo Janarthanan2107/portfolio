@@ -1,3 +1,4 @@
+// skill datas
 const skillsData = [
     {
         id: 1,
