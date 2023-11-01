@@ -28,6 +28,7 @@ const App = () => {
           className="text-[1.5rem] bg-primary text-white p-6 rounded-[50%] w-9 h-9 flex items-center justify-center"
           onClick={toggleDarkTheme}
         >
+        {/* background theme toggle  */}
           {!theme ? (
             <i className="fa-regular fa-moon"></i>
           ) : (
