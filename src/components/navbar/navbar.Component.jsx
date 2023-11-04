@@ -9,6 +9,7 @@ const Navbar = ({ smoothScrollTo, activeSection }) => {
   const { theme } = useDarkTheme();
 
   return (
+    // navbar
     <div
       className={`navbar fixed top-0 left-0 w-full shadow-md ${
         theme ? "bg-black" : "bg-white"
