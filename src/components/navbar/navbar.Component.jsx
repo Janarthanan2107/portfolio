@@ -1,5 +1,6 @@
 // import context
 import { useState } from "react";
+// import the theme state from context 
 import { useDarkTheme } from "../../context/theme.Context";
 
 // adding smooth scroll option to the project
