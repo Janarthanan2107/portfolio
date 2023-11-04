@@ -10,6 +10,8 @@ const Navbar = ({ smoothScrollTo, activeSection }) => {
 
   return (
     // navbar
+
+    {/* setting the theme using state from context */}
     <div
       className={`navbar fixed top-0 left-0 w-full shadow-md ${
         theme ? "bg-black" : "bg-white"
