@@ -25,6 +25,8 @@ const Navbar = ({ smoothScrollTo, activeSection }) => {
         >
           <i className="fa-solid fa-code text-blue-500"></i> Janarthanan.
         </div>
+        
+          {/* menu for portfolio sections */}
         <div className="menu">
           <ul className="flex gap-7 text-[1.1150rem] font-medium">
             <li
