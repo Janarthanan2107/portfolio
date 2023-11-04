@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useDarkTheme } from "../../context/theme.Context";
 
+// adding smooth scroll option to the project
 const Navbar = ({ smoothScrollTo, activeSection }) => {
   // use our theme context here!
   const { theme } = useDarkTheme();
