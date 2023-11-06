@@ -100,6 +100,7 @@ const Form = () => {
               I accept the terms & condition
             </label>
           </div>
+          {/* submit button for a  form */}
           <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
             Submit
           </button>
