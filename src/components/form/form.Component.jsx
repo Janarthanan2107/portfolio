@@ -17,6 +17,7 @@ const Form = () => {
             theme ? "text-white" : "text-headingColor"
           } `}
         >
+          {/*  */}
           Get In Touch
         </p>
       </div>
