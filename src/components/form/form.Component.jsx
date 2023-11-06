@@ -20,6 +20,7 @@ const Form = () => {
           Get In Touch
         </p>
       </div>
+      {/* form container for connect to mail */}
       <div className="form-container">
         <div className="grid grid-cols-2 gap-8">
           <div className="form-control flex flex-col gap-1">
