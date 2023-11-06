@@ -7,7 +7,7 @@ const DarkThemeContext = createContext();
 const DarkThemeProvider = ({ children }) => {
   // theme boolean count
   const [theme, setTheme] = useState(false);
-
+  // toggling the theme light to dark
   const toggleDarkTheme = () => {
     setTheme(!theme);
   };
