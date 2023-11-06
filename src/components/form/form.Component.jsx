@@ -17,7 +17,7 @@ const Form = () => {
             theme ? "text-white" : "text-headingColor"
           } `}
         >
-          {/*  */}
+          {/* it navigates to the contact section */}
           Get In Touch
         </p>
       </div>
