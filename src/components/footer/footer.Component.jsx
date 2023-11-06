@@ -17,6 +17,7 @@ const Footer = () => {
         </div>
         <div className="menu">
           <ul className="flex gap-7 text-[1.1150rem] font-medium">
+            {/* menu on the footer */}
             <li
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 theme ? "text-white" : "text-black"
