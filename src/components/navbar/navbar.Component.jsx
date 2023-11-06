@@ -29,6 +29,7 @@ const Navbar = ({ smoothScrollTo, activeSection }) => {
           {/* menu for portfolio sections */}
         <div className="menu">
           <ul className="flex gap-7 text-[1.1150rem] font-medium">
+            {/* using smooth scroll function navigate to the section with a smooth manner */}
             <li
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 activeSection === "home"
