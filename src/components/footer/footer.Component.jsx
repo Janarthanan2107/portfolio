@@ -48,6 +48,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        {/* soical links to the project */}
         <div className="social-links">
           <ul className="flex gap-7 text-[1.5rem]">
             <li
