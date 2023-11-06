@@ -12,6 +12,7 @@ const DarkThemeProvider = ({ children }) => {
     setTheme(!theme);
   };
 
+  // passing values to the app component with the provider
   const value = {
     theme,
     toggleDarkTheme,
