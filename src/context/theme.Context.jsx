@@ -19,6 +19,7 @@ const DarkThemeProvider = ({ children }) => {
   };
 
   return (
+    // custome theme provider with values to the app as arugment
     <DarkThemeContext.Provider value={value}>
       {children}
     </DarkThemeContext.Provider>
