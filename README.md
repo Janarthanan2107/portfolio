@@ -1,4 +1,4 @@
-## Tic-tac-toe Application
+## PORTFOLIO
 
 A brief description of your React application.
 
