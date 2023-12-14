@@ -48,7 +48,7 @@ const Form = () => {
             >
               Mobile:
             </label>
-            <span>+91 81108-64319</span>
+            <span className="text-violet-500">+91 81108-64319</span>
           </div>
           {/* <div className="form-control flex flex-col gap-1">
             <label
