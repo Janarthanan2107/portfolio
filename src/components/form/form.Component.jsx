@@ -21,19 +21,24 @@ const Form = () => {
         </p>
       </div>
       <div className="form-container">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="flex justify-content-between gap-[100px]">
           <div className="form-control flex flex-col gap-1">
             <label
               className={`text-[1rem] font-medium ${
                 theme ? "text-white" : "text-black"
               } `}
             >
-              First Name
+              Email:
             </label>
-            <input
-              type="text"
-              className="p-2 border border-primary rounded-md w-60"
-            />
+            <span>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                target="_blank"
+                className="text-violet-500"
+              >
+                janarthanan.v2107@gmail.com
+              </a>
+            </span>
           </div>
           <div className="form-control flex flex-col gap-1">
             <label
@@ -41,14 +46,11 @@ const Form = () => {
                 theme ? "text-white" : "text-black"
               } `}
             >
-              Last Name
+              Mobile:
             </label>
-            <input
-              type="text"
-              className="p-2 border border-primary rounded-md w-60"
-            />
+            <span>+91 81108-64319</span>
           </div>
-          <div className="form-control flex flex-col gap-1">
+          {/* <div className="form-control flex flex-col gap-1">
             <label
               className={`text-[1rem] font-medium ${
                 theme ? "text-white" : "text-black"
@@ -73,9 +75,9 @@ const Form = () => {
               type="number"
               className="p-2 border border-primary rounded-md w-60"
             />
-          </div>
+          </div> */}
         </div>
-        <div className="mt-[2rem] flex flex-col gap-2">
+        {/* <div className="mt-[2rem] flex flex-col gap-2">
           <div className="form-control flex flex-col gap-1">
             <label
               className={`text-[1rem] font-medium ${
@@ -102,7 +104,7 @@ const Form = () => {
           <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
             Submit
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

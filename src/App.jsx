@@ -39,7 +39,7 @@ const App = () => {
       <Hero activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
       <Skills />
       <Projects />
-      {/* <Form /> */}
+      <Form />
       <Footer />
     </>
   );
