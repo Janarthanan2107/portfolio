@@ -1,4 +1,3 @@
-// skill datas
 const skillsData = [
     {
         id: 1,
@@ -26,23 +25,22 @@ const skillsData = [
     },
 ];
 
-// project datas
 const projectsData = [
     {
         id: 1,
-        img: "/assets/project-thumbnail/crud.PNG",
+        img: "/assets/project-thumbnail/trendspotter.png",
         title: "Crud Application",
-        desc: "Successfully designed and implemented a robust CRUD (Create, Read, Update, Delete) application, streamlining data management with a user-friendly interface. Demonstrated proficiency in database integration and application development.",
-        live:"https://iridescent-maamoul-9dd31b.netlify.app/",
-        link: "https://github.com/Janarthanan2107/BasicCurd-React"
+        desc: "Explore the epitome of style with our Men's Fashion platform, meticulously crafted with React technology. Our user-friendly admin panel empowers seamless management, ensuring a tailored experience. Elevate your wardrobe with the latest trends, where innovation meets accessibility, setting the standard for modern, dynamic, and trendsetting men's fashion.",
+        live:"https://trendspotter-mens-fashion.netlify.app/",
+        link: "https://github.com/Janarthanan2107/Trend-Spotter-React"
     },
     {
         id: 2,
-        img: "/assets/project-thumbnail/dataFetch.PNG",
-        title: "Product Data",
-        desc: "Created a dynamic product card data fetching system, efficiently presenting real-time product information with an appealing design. Demonstrated expertise in API integration and responsive web design.",
-        live:"https://dancing-gumdrop-60bca9.netlify.app/",
-        link: "https://github.com/Janarthanan2107/API-Products-React"
+        img: "/assets/project-thumbnail/employeeDashboard.png",
+        title: "Employee Dashboard",
+        desc: "In our innovative project, we have crafted a dynamic and user-friendly dashboard that empowers you to effortlessly manage your workforce. Seamlessly add and view employee profiles, including their names, roles, gender, and years of experience. With the power of real-time updates, you can conveniently access individual employee details and stay organized. Our responsive and intuitive design ensures an engaging and efficient user experience. Experience the future of workforce management in one click - your all-in-one solution for streamlined HR operations!",
+        live:"https://heartfelt-hamster-96b7a5.netlify.app/",
+        link: "https://github.com/Janarthanan2107/Employee-Management-React"
     },
     {
         id: 3,

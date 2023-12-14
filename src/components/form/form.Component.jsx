@@ -20,7 +20,6 @@ const Form = () => {
           Get In Touch
         </p>
       </div>
-      {/* form container for connect to mail */}
       <div className="form-container">
         <div className="grid grid-cols-2 gap-8">
           <div className="form-control flex flex-col gap-1">
@@ -100,7 +99,6 @@ const Form = () => {
               I accept the terms & condition
             </label>
           </div>
-          {/* submit button for a  form */}
           <button className="py-3 px-4 font-semibold border border-primary rounded-md bg-primary text-white hover:bg-white hover:text-primary transition duration-250 ease-out hover:ease-in">
             Submit
           </button>

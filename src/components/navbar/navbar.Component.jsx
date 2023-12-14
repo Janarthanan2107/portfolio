@@ -1,17 +1,12 @@
 // import context
 import { useState } from "react";
-// import the theme state from context 
 import { useDarkTheme } from "../../context/theme.Context";
 
-// adding smooth scroll option to the project
 const Navbar = ({ smoothScrollTo, activeSection }) => {
   // use our theme context here!
   const { theme } = useDarkTheme();
 
   return (
-    // navbar
-
-    {/* setting the theme using state from context */}
     <div
       className={`navbar fixed top-0 left-0 w-full shadow-md ${
         theme ? "bg-black" : "bg-white"
@@ -25,11 +20,8 @@ const Navbar = ({ smoothScrollTo, activeSection }) => {
         >
           <i className="fa-solid fa-code text-blue-500"></i> Janarthanan.
         </div>
-        
-          {/* menu for portfolio sections */}
         <div className="menu">
           <ul className="flex gap-7 text-[1.1150rem] font-medium">
-            {/* using smooth scroll function navigate to the section with a smooth manner */}
             <li
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 activeSection === "home"

@@ -7,19 +7,17 @@ const DarkThemeContext = createContext();
 const DarkThemeProvider = ({ children }) => {
   // theme boolean count
   const [theme, setTheme] = useState(false);
-  // toggling the theme light to dark
+
   const toggleDarkTheme = () => {
     setTheme(!theme);
   };
 
-  // passing values to the app component with the provider
   const value = {
     theme,
     toggleDarkTheme,
   };
 
   return (
-    // custome theme provider with values to the app as arugment
     <DarkThemeContext.Provider value={value}>
       {children}
     </DarkThemeContext.Provider>
