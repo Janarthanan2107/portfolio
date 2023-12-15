@@ -53,7 +53,7 @@ const Form = () => {
                 theme ? "text-white" : "text-black"
               } `}
             >
-              Email:
+              Gmail To:
             </label>
             <span>
               <a
