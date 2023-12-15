@@ -11,13 +11,13 @@ const App = () => {
   // use our theme context here!
   const { toggleDarkTheme, theme } = useDarkTheme();
 
-  const [activeSection, setActiveSection] = useState('home'); // Default to 'home'
+  const [activeSection, setActiveSection] = useState("home"); // Default to 'home'
 
   function smoothScrollTo(targetId) {
     const targetElement = document.getElementById(targetId);
-    setActiveSection(targetId)
+    setActiveSection(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
   }
 
@@ -35,12 +35,12 @@ const App = () => {
           )}
         </button>
       </div>
-      <Navbar activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
-      <Hero activeSection={activeSection} smoothScrollTo={smoothScrollTo}/>
+      <Navbar activeSection={activeSection} smoothScrollTo={smoothScrollTo} />
+      <Hero activeSection={activeSection} smoothScrollTo={smoothScrollTo} />
       <Skills />
       <Projects />
       <Form />
-      <Footer />
+      <Footer activeSection={activeSection} smoothScrollTo={smoothScrollTo} />
     </>
   );
 };

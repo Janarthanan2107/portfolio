@@ -1,7 +1,7 @@
 // import context
 import { useDarkTheme } from "../../context/theme.Context";
 
-const Footer = () => {
+const Footer = ({ smoothScrollTo, activeSection }) => {
   // use our theme context here!
   const { theme } = useDarkTheme();
   return (
@@ -21,6 +21,7 @@ const Footer = () => {
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 theme ? "text-white" : "text-black"
               }`}
+              onClick={() => smoothScrollTo("home")}
             >
               Home
             </li>
@@ -28,6 +29,7 @@ const Footer = () => {
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 theme ? "text-white" : "text-black"
               }`}
+              onClick={() => smoothScrollTo("skills")}
             >
               Skills
             </li>
@@ -35,6 +37,7 @@ const Footer = () => {
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 theme ? "text-white" : "text-black"
               }`}
+              onClick={() => smoothScrollTo("portfolio")}
             >
               Portfolio
             </li>
@@ -42,6 +45,7 @@ const Footer = () => {
               className={`cursor-pointer hover:text-primary hover:-translate-y-[5px] ${
                 theme ? "text-white" : "text-black"
               }`}
+              onClick={() => smoothScrollTo("form")}
             >
               Contact
             </li>
@@ -49,26 +53,36 @@ const Footer = () => {
         </div>
         <div className="social-links">
           <ul className="flex gap-7 text-[1.5rem]">
-            <li
+            {/* <li
               className={`cursor-pointer hover:text-primary ${
                 theme ? "text-white" : "text-black"
               }`}
             >
               <i className="fa-brands fa-facebook"></i>
+            </li> */}
+            <li
+              className={`cursor-pointer hover:text-primary ${
+                theme ? "text-white" : "text-black"
+              }`}
+            >
+              <a
+                href="https://www.instagram.com/ja_na_rth/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                target="_blank"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
             </li>
             <li
               className={`cursor-pointer hover:text-primary ${
                 theme ? "text-white" : "text-black"
               }`}
             >
-              <i className="fa-brands fa-instagram"></i>
-            </li>
-            <li
-              className={`cursor-pointer hover:text-primary ${
-                theme ? "text-white" : "text-black"
-              }`}
-            >
-              <i className="fa-brands fa-linkedin"></i>
+              <a
+                href="www.linkedin.com/in/janarthanan-v-fullstackdeveloper"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
             </li>
           </ul>
         </div>

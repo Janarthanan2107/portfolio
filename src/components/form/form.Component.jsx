@@ -1,9 +1,34 @@
 // import context
+import { useState } from "react";
 import { useDarkTheme } from "../../context/theme.Context";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+
+const CopyToClipboardButton = ({ text }) => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setIsCopied(true);
+    } catch (error) {
+      console.error("Unable to copy text to clipboard", error);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={copyToClipboard}>Copy to Clipboard</button>
+      {isCopied && <p>Text copied to clipboard!</p>}
+    </div>
+  );
+};
 
 const Form = () => {
   // use our theme context here!
   const { theme } = useDarkTheme();
+
+  const gamil = "janarthanan.v2107@gmail.com";
+
   return (
     <div
       className={`form py-[4rem] bg-white flex flex-col justify-center items-center ${
@@ -32,11 +57,12 @@ const Form = () => {
             </label>
             <span>
               <a
-                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=janarthanan.v2107@gmail.com"
                 target="_blank"
-                className="text-violet-500"
+                className="text-violet-500 flex items-center justify-center gap-3"
               >
-                janarthanan.v2107@gmail.com
+                <BsBoxArrowUpRight />
+                {gamil}
               </a>
             </span>
           </div>
