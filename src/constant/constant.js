@@ -29,7 +29,7 @@ const projectsData = [
     {
         id: 1,
         img: "/assets/project-thumbnail/trendspotter.png",
-        title: "Crud Application",
+        title: "TrendSpotter",
         desc: "Explore the epitome of style with our Men's Fashion platform, meticulously crafted with React technology. Our user-friendly admin panel empowers seamless management, ensuring a tailored experience. Elevate your wardrobe with the latest trends, where innovation meets accessibility, setting the standard for modern, dynamic, and trendsetting men's fashion.",
         live:"https://trendspotter-mens-fashion.netlify.app/",
         link: "https://github.com/Janarthanan2107/Trend-Spotter-React"
